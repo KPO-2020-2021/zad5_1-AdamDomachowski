@@ -3,6 +3,7 @@
 
 CMakeFiles/main.dir/app/main.cpp.o
  ../inc/Cuboid.hh
+ ../inc/Drone.hh
  ../inc/Matrix.hh
  ../inc/Solid.hh
  ../inc/Vector.hh

@@ -54,5 +54,12 @@ Cuboid::Cuboid(Vector3D srodek, double a, double b, double c, std::string nazwa_
     
 }
  
-    
-
+/* 
+Cuboid::Cuboid(Cuboid& prostopadloscian )
+{
+    wymiary = prostopadloscian.wymiary;
+    wierzcholki = prostopadloscian.wierzcholki;
+    srodek_bryly = prostopadloscian.srodek_bryly;
+    nazwa_pliku_bryly = prostopadloscian.nazwa_pliku_bryly; 
+}
+*/

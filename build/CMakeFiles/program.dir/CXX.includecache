@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+../inc/Cuboid.hh
+Solid.hh
+../inc/Solid.hh
+
+../inc/Drone.hh
+unistd.h
+-
+Cuboid.hh
+../inc/Cuboid.hh
+prism6.hh
+../inc/prism6.hh
+../inc/lacze_do_gnuplota.hh
+../inc/lacze_do_gnuplota.hh
+
 ../inc/Matrix.hh
 Vector.hh
 ../inc/Vector.hh
@@ -46,6 +60,14 @@ cmath
 Vector.hh
 ../inc/Vector.hh
 
+../inc/lacze_do_gnuplota.hh
+string
+-
+list
+-
+vector
+-
+
 ../inc/matrix3x3.hh
 Matrix.hh
 ../inc/Matrix.hh
@@ -56,7 +78,7 @@ Solid.hh
 
 ../inc/size.hh
 
-/home/adam/programowanie/zad5_1-AdamDomachowski/src/prism6.cpp
-prism6.hh
-/home/adam/programowanie/zad5_1-AdamDomachowski/src/prism6.hh
+/home/adam/programowanie/zad5_1-AdamDomachowski/src/Drone.cpp
+Drone.hh
+/home/adam/programowanie/zad5_1-AdamDomachowski/src/Drone.hh
 

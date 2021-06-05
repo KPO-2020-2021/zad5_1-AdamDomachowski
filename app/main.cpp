@@ -15,29 +15,28 @@
 #include "Matrix.hh"
 #include "Cuboid.hh"
 #include "prism6.hh"
+#include "Drone.hh"
 #include "../inc/lacze_do_gnuplota.hh"
 
 /*! \brief tu sie dzieje program*/
 
 
 int main() {
-  Vector3D wektor;
-  Prism6 granek(wektor);
+Drone d(0);
 
 
   PzG::LaczeDoGNUPlota Lacze;
-  Lacze.DodajNazwePliku("../datas/graniastoslup6.dat", PzG::RR_Ciagly, 2);
+  Lacze.DodajNazwePliku("../datas/cuboid.dat", PzG::RR_Ciagly, 2);
 
   Lacze.ZmienTrybRys(PzG::TR_3D);
 
-  Lacze.UstawZakresX(-155,155);
-  Lacze.UstawZakresY(-155,155);
-  Lacze.UstawZakresZ(-155,155);
-  granek.zapisz_do_pliku();
+  Lacze.UstawZakresX(-300,300);
+  Lacze.UstawZakresY(-300,300);
+  Lacze.UstawZakresZ(-300,300);
+  d.zapisz();
   Lacze.Rysuj();
-
   while(1)
   {
-
+  d.pilot(Lacze);
   }
 }

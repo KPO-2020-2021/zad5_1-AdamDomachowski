@@ -590,6 +590,33 @@ app/main.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/app/main.cpp.s
 .PHONY : app/main.cpp.s
 
+src/Drone.o: src/Drone.cpp.o
+
+.PHONY : src/Drone.o
+
+# target to build an object file
+src/Drone.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Drone.cpp.o
+.PHONY : src/Drone.cpp.o
+
+src/Drone.i: src/Drone.cpp.i
+
+.PHONY : src/Drone.i
+
+# target to preprocess a source file
+src/Drone.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Drone.cpp.i
+.PHONY : src/Drone.cpp.i
+
+src/Drone.s: src/Drone.cpp.s
+
+.PHONY : src/Drone.s
+
+# target to generate assembly for a file
+src/Drone.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Drone.cpp.s
+.PHONY : src/Drone.cpp.s
+
 src/Solid.o: src/Solid.cpp.o
 
 .PHONY : src/Solid.o
@@ -798,6 +825,9 @@ help:
 	@echo "... app/main.o"
 	@echo "... app/main.i"
 	@echo "... app/main.s"
+	@echo "... src/Drone.o"
+	@echo "... src/Drone.i"
+	@echo "... src/Drone.s"
 	@echo "... src/Solid.o"
 	@echo "... src/Solid.i"
 	@echo "... src/Solid.s"

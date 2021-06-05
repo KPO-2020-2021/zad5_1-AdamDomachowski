@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/adam/programowanie/zad5_1-AdamDomachowski/src/Drone.cpp" "/home/adam/programowanie/zad5_1-AdamDomachowski/build/CMakeFiles/program.dir/src/Drone.cpp.o"
   "/home/adam/programowanie/zad5_1-AdamDomachowski/src/Solid.cpp" "/home/adam/programowanie/zad5_1-AdamDomachowski/build/CMakeFiles/program.dir/src/Solid.cpp.o"
   "/home/adam/programowanie/zad5_1-AdamDomachowski/src/cuboid.cpp" "/home/adam/programowanie/zad5_1-AdamDomachowski/build/CMakeFiles/program.dir/src/cuboid.cpp.o"
   "/home/adam/programowanie/zad5_1-AdamDomachowski/src/example.cpp" "/home/adam/programowanie/zad5_1-AdamDomachowski/build/CMakeFiles/program.dir/src/example.cpp.o"

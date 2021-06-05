@@ -34,6 +34,7 @@ void Solid::przesun_o_wektor(Vector3D wektor_przesuniecia)
     {
         wierzcholki[i] =  wierzcholki[i] + wektor_przesuniecia;
     }
+    srodek_bryly =  srodek_bryly + wektor_przesuniecia;
 }
 
 

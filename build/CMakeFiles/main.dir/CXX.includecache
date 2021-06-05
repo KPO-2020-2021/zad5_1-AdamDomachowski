@@ -10,6 +10,16 @@
 Solid.hh
 ../inc/Solid.hh
 
+../inc/Drone.hh
+unistd.h
+-
+Cuboid.hh
+../inc/Cuboid.hh
+prism6.hh
+../inc/prism6.hh
+../inc/lacze_do_gnuplota.hh
+../inc/lacze_do_gnuplota.hh
+
 ../inc/Matrix.hh
 Vector.hh
 ../inc/Vector.hh
@@ -89,6 +99,8 @@ Cuboid.hh
 /home/adam/programowanie/zad5_1-AdamDomachowski/app/Cuboid.hh
 prism6.hh
 /home/adam/programowanie/zad5_1-AdamDomachowski/app/prism6.hh
+Drone.hh
+/home/adam/programowanie/zad5_1-AdamDomachowski/app/Drone.hh
 ../inc/lacze_do_gnuplota.hh
 /home/adam/programowanie/zad5_1-AdamDomachowski/inc/lacze_do_gnuplota.hh
 

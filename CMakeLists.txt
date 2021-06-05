@@ -44,6 +44,7 @@ set(SOURCES          # All .cpp files in src/
     src/cuboid.cpp
     src/Solid.cpp
     src/prism6.cpp
+    src/Drone.cpp
 )
 set(TESTFILES        # All .cpp files in tests/
     tests/dummy.cpp

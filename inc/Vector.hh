@@ -25,9 +25,7 @@ public:
     Vector();
 
 
-
     Vector(double size[SIZE]);
-
 
     bool operator == ( const Vector<SIZE> &v) const;
 
