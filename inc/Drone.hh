@@ -6,18 +6,39 @@
 
 class Drone 
 {
-    int nr_drona;
-    Matrix3x3 macierz_obrotu;
-    Vector3D droga;
-    double kat;
-    Cuboid body_dummy;
-    Cuboid body_copy;
-
+    PzG::LaczeDoGNUPlota &Lacze;
+    int nr_drona; /*! \brief numer drona do identyfikacji obiektu*/
+    double kat;   /*! \brief kat obrotu*/
+    std::vector<Vector3D> trajektoria; /*! \brief trajektoria lotu drona*/
+    Matrix3x3 macierz_obrotu; /*! \brief macierz do oborotu bryly*/
+    Vector3D droga; /*! \brief na podstawie drogi obliczany jest wektor przesuniecia*/
+    Cuboid body_org; /*! \brief obiekt oryginalny*/
+    Cuboid body_copy;  /*! \brief kopia*/
+    Prism6 wings_org[4]; /*! \brief obiekt oryginalny*/
+    Prism6 wings_copy[4];  /*! \brief kopia*/
 public:
 
-    Drone(int nr_drona);
+    /*! \brief konstruktor parametryczny*/
+    Drone(int nr_drona,PzG::LaczeDoGNUPlota &Lacze,Vector3D wspolrzende); 
+
+    /*! \brief funkcja wizualizująca oraz wykonująca lot drona w kierunku prostopadlym do podloza*/
+    void lot_do_gory(double droga);
+
+    /*! \brief funkcja odpowiedzialna za obracanie drona*/
     void obrot(double kat);
-    void przesun(double dorga); /*! \brief tutaj podajemy odleglosc o jaka dron ma sie przesunac */
+
+    /*! \brief funkcja odpowiedzialna za symulacje obrotu wiernikow oraz ich przemieszcanie*/
+    void obrot_wiernikow();
+
+    /*! \brief funkcja odpowiadająca za zapis informacji o wspolrzednych do pliku*/
     void zapisz();
-    void pilot(PzG::LaczeDoGNUPlota &Lacze);
+
+    /*! \brief funkcja odpowiedzialna za przesuwanie drona (lot) po plaszczyznie*/
+    void przesun(double dorga); 
+
+    /*! \brief funkcja odpowiadająca rysowanie trajektorii lotu drona w przestrzeni*/
+    void narysuj_trase(double droga);
+    
+    /*! \brief funkcja odpowiadająca za pilotaz dronem*/
+    void pilot();
 };

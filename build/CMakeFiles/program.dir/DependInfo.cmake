@@ -6,11 +6,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/adam/programowanie/zad5_1-AdamDomachowski/src/Drone.cpp" "/home/adam/programowanie/zad5_1-AdamDomachowski/build/CMakeFiles/program.dir/src/Drone.cpp.o"
   "/home/adam/programowanie/zad5_1-AdamDomachowski/src/Solid.cpp" "/home/adam/programowanie/zad5_1-AdamDomachowski/build/CMakeFiles/program.dir/src/Solid.cpp.o"
+  "/home/adam/programowanie/zad5_1-AdamDomachowski/src/bottom.cpp" "/home/adam/programowanie/zad5_1-AdamDomachowski/build/CMakeFiles/program.dir/src/bottom.cpp.o"
   "/home/adam/programowanie/zad5_1-AdamDomachowski/src/cuboid.cpp" "/home/adam/programowanie/zad5_1-AdamDomachowski/build/CMakeFiles/program.dir/src/cuboid.cpp.o"
   "/home/adam/programowanie/zad5_1-AdamDomachowski/src/example.cpp" "/home/adam/programowanie/zad5_1-AdamDomachowski/build/CMakeFiles/program.dir/src/example.cpp.o"
   "/home/adam/programowanie/zad5_1-AdamDomachowski/src/lacze_do_gnuplota.cpp" "/home/adam/programowanie/zad5_1-AdamDomachowski/build/CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o"
   "/home/adam/programowanie/zad5_1-AdamDomachowski/src/matrix3x3.cpp" "/home/adam/programowanie/zad5_1-AdamDomachowski/build/CMakeFiles/program.dir/src/matrix3x3.cpp.o"
   "/home/adam/programowanie/zad5_1-AdamDomachowski/src/prism6.cpp" "/home/adam/programowanie/zad5_1-AdamDomachowski/build/CMakeFiles/program.dir/src/prism6.cpp.o"
+  "/home/adam/programowanie/zad5_1-AdamDomachowski/src/scena.cpp" "/home/adam/programowanie/zad5_1-AdamDomachowski/build/CMakeFiles/program.dir/src/scena.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

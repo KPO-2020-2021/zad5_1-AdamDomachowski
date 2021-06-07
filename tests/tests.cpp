@@ -8,6 +8,8 @@
 #include "matrix2x2.hh"
 #include "matrix3x3.hh"
 #include "Cuboid.hh"
+#include "prism6.hh"
+#include "Solid.hh"
 
 
 //testy do Vector3D
@@ -127,13 +129,13 @@ TEST_CASE("vector - operator +")
 
   double second[2] = {2137,2137};
   Vector2D second_one = Vector2D(second);
-  first_one + second_one;
+  Vector2D temp = first_one + second_one;
 
   double sum[2] = {2138,2139};
   Vector2D sample = Vector2D(sum);
 
   for(int i=0;i<SIZE;i++){
-  CHECK(first_one[i]==sample[i]);
+  CHECK(temp[i]==sample[i]);
   }
 }
 
@@ -144,48 +146,16 @@ TEST_CASE("vector - operator -")
 
   double second[2] = {2137,2137};
   Vector2D second_one = Vector2D(second);
-  first_one - second_one;
+  Vector2D schowek = first_one - second_one;
 
   double sum[2] = {-2136,-2135};
   Vector2D sample = Vector2D(sum);
 
   for(int i=0;i<SIZE;i++){
-  CHECK(first_one[i]==sample[i]);
+  CHECK(schowek[i]==sample[i]);
   }
 }
 
-/*
-TEST_CASE("vector - operator <<")
-{
-    double tab[]={3,2};
-    Vector2D temporary(tab);
-    std::ostringstream out;
-    out << temporary;
-    CHECK (1 == 1);  
-}
-
-TEST_CASE("vector - operator >>") 
-{
-  Vector2D sample;  
-
-  std::istringstream in("21 15");
-  in >> sample;
-  std::ostringstream out;
-  out << sample;
-
-  CHECK("21 15 " == out.str());
-}
-
-
-TEST_CASE("vector - operator ==") 
-{
-  double sample_pack1[2] = {1,2};
-  Vector2D sample1 = Vector2D(sample_pack1);
-  double sample_pack[2] = {1,2};
-  Vector2D sample = Vector2D(sample_pack);    
-  CHECK(sample == sample1);
-}
-*/
 
 
 TEST_CASE("vector - operator [out of size]") 
@@ -216,28 +186,6 @@ TEST_CASE("wczytywanie i odczytywania wartosci"){
     CHECK((temp(0,0)==1 && temp(0,1)==2 && temp(1,0) ==3 && temp(1,1)==4));
 }
 
-/*
-TEST_CASE("wyswietlenie wartosci"){
-    double values_M[2][2]={4,2,3,6};
-    Matrix2x2 temp(values_M);
-    std::ostringstream out;
-    out << temp;
-    CHECK(" 1.0000000000\t 2.0000000000\t 3.0000000000\t 4.0000000000\t" == out.str());
-}
-
-TEST_CASE("wczytywania wartosci "){
-    Matrix2x2 temp;
-    std::istringstream input("1 2 3 4");
-    input >> temp;
-    CHECK((temp(0,0)==1 && temp(0,1)==2 && temp(1,0)==3 && temp(1,1)==4));  
-}
-
-TEST_CASE("wczytywanie znaków niezgodnych z zalozeniem"){
-    Matrix2x2 temp;
-    std::istringstream input("1 % 3 Z");
-    WARN_THROWS(input >> temp);
-}
-*/
 
 TEST_CASE("mnozenie macierzy2x2 i wektora."){
     double a[]={5,10}, b[2][2]={1,2,3,4};
@@ -254,20 +202,6 @@ TEST_CASE("mnozenie macierzy przez macierz."){
     CHECK((Result(0,0) == 15 && Result(0,1) == 9 && Result(1,0) == 39 && Result(1,1) == 23));
 }
 
-/*
-TEST_CASE("dzielenie macierzy2x2 przez skalar."){
-    double a[2][2]={4,6,8,12};
-    Matrix2x2 temp(a);
-    temp = temp / 2;
-    CHECK((Example1(0,0) == 2 && Example1(0,1) == 3 && Example1(1,0) == 4 && Example1(1,1) == 6));
-}
-
-TEST_CASE("Test reakcji metody przeciazenia operatora / na dzielenie macierzy przez zero. "){
-    double values_M1[2][2]={4,6,8,12};
-    Matrix2x2 Example1(values_M1);
-    WARN_THROWS(Example1 = Example1 / 0);
-}
-*/
 
 TEST_CASE("dodawanie dwoch macierzy"){
     double a[2][2]={4,6,8,12},b[2][2]={6,4,2,-2};
@@ -295,6 +229,95 @@ TEST_CASE("reset macierzy."){
     CHECK((temp==jednostkowa));
 }
 
+
+
+
+//testy dla Cuboid
+
+TEST_CASE("test parametrycznego konstruktora klasy."){
+Cuboid cub;
+
+CHECK(cub.jaka_nazwa() == "../datas/cuboid.dat");
+double zero[3] = {0,0,0};
+Vector3D srodek = Vector3D(zero);
+CHECK(cub.zczytaj_srodek() == srodek);
+
+double w0[3] = {-15,15,10};
+double w1[3] = {-15,15,-10};
+double w2[3] = {15,15,10};
+double w3[3] = {15,15,-10};
+double w4[3] = {15,-15,10};
+double w5[3] = {15,-15,-10};
+double w6[3] = {-15,-15,10};
+double w7[3] = {-15,-15,-10};
+
+Vector3D a = Vector3D(w0);
+CHECK(cub.czytaj_wierzcholki(0) == a);
+Vector3D b = Vector3D(w1);
+CHECK(cub.czytaj_wierzcholki(1) == b);
+Vector3D c = Vector3D(w2);
+CHECK(cub.czytaj_wierzcholki(2) == c);
+Vector3D d = Vector3D(w3);
+CHECK(cub.czytaj_wierzcholki(3) == d);
+Vector3D e = Vector3D(w4);
+CHECK(cub.czytaj_wierzcholki(4) == e);
+Vector3D f = Vector3D(w5);
+CHECK(cub.czytaj_wierzcholki(5) == f);
+Vector3D g = Vector3D(w6);
+CHECK(cub.czytaj_wierzcholki(6) == g);
+Vector3D h = Vector3D(w7);
+CHECK(cub.czytaj_wierzcholki(7) == h);
+}
+
+//testy dla prism6
+
+TEST_CASE("test parametrycznego konstruktora klasy Prism6."){
+Prism6 prism;
+
+CHECK(prism.jaka_nazwa() == "../datas/graniastoslup6.dat");
+double zero[3] = {0,0,0};
+Vector3D srodek = Vector3D(zero);
+CHECK(prism.zczytaj_srodek() == srodek);
+/*
+double w0[3] = {10,0,7.5};
+double w1[3] = {10,0,-7.5};
+double w2[3] = {5,8.6602540378,7.5};
+double w3[3] = {5,8.6602540378,-7.5};
+double w4[3] = {-5,8.6602540378,7.5};
+double w5[3] = {-5,8.6602540378,-7.5};
+double w6[3] = {-10,0,7};
+double w7[3] = {-15,-15,-10};
+double w8[3] = {15,-15,10};
+double w9[3] = {15,-15,-10};
+double w10[3] = {-15,-15,10};
+double w11[3] = {-15,-15,-10};
+
+Vector3D a = Vector3D(w0);
+CHECK(prism.czytaj_wierzcholki(0) == a);
+Vector3D b = Vector3D(w1);
+CHECK(prism.czytaj_wierzcholki(1) == b);
+Vector3D c = Vector3D(w2);
+CHECK(prism.czytaj_wierzcholki(2) == c);
+Vector3D d = Vector3D(w3);
+CHECK(prism.czytaj_wierzcholki(3) == d);
+Vector3D e = Vector3D(w4);
+CHECK(prism.czytaj_wierzcholki(4) == e);
+Vector3D f = Vector3D(w5);
+CHECK(prism.czytaj_wierzcholki(5) == f);
+Vector3D g = Vector3D(w6);
+CHECK(prism.czytaj_wierzcholki(6) == g);
+Vector3D h = Vector3D(w7);
+CHECK(prism.czytaj_wierzcholki(7) == h);
+Vector3D i = Vector3D(w8);
+CHECK(prism.czytaj_wierzcholki(4) == i);
+Vector3D j = Vector3D(w9);
+CHECK(prism.czytaj_wierzcholki(5) == j);
+Vector3D k = Vector3D(w10);
+CHECK(prism.czytaj_wierzcholki(6) == k);
+Vector3D l = Vector3D(w11);
+CHECK(prism.czytaj_wierzcholki(7) == l);
+*/
+}
 
 
 

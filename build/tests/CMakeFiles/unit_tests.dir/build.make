@@ -110,7 +110,9 @@ unit_tests_EXTERNAL_OBJECTS = \
 "/home/adam/programowanie/zad5_1-AdamDomachowski/build/CMakeFiles/program.dir/src/cuboid.cpp.o" \
 "/home/adam/programowanie/zad5_1-AdamDomachowski/build/CMakeFiles/program.dir/src/Solid.cpp.o" \
 "/home/adam/programowanie/zad5_1-AdamDomachowski/build/CMakeFiles/program.dir/src/prism6.cpp.o" \
-"/home/adam/programowanie/zad5_1-AdamDomachowski/build/CMakeFiles/program.dir/src/Drone.cpp.o"
+"/home/adam/programowanie/zad5_1-AdamDomachowski/build/CMakeFiles/program.dir/src/Drone.cpp.o" \
+"/home/adam/programowanie/zad5_1-AdamDomachowski/build/CMakeFiles/program.dir/src/scena.cpp.o" \
+"/home/adam/programowanie/zad5_1-AdamDomachowski/build/CMakeFiles/program.dir/src/bottom.cpp.o"
 
 unit_tests: tests/CMakeFiles/unit_tests.dir/main.cpp.o
 unit_tests: tests/CMakeFiles/unit_tests.dir/tests.cpp.o
@@ -122,6 +124,8 @@ unit_tests: CMakeFiles/program.dir/src/cuboid.cpp.o
 unit_tests: CMakeFiles/program.dir/src/Solid.cpp.o
 unit_tests: CMakeFiles/program.dir/src/prism6.cpp.o
 unit_tests: CMakeFiles/program.dir/src/Drone.cpp.o
+unit_tests: CMakeFiles/program.dir/src/scena.cpp.o
+unit_tests: CMakeFiles/program.dir/src/bottom.cpp.o
 unit_tests: tests/CMakeFiles/unit_tests.dir/build.make
 unit_tests: tests/CMakeFiles/unit_tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adam/programowanie/zad5_1-AdamDomachowski/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../unit_tests"

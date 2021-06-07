@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <fstream>
 #include <string>
-
+#include "scena.hh"
 #include "exampleConfig.h"
 #include "example.h"
 #include "Vector.hh"
@@ -21,22 +21,17 @@
 /*! \brief tu sie dzieje program*/
 
 
-int main() {
-Drone d(0);
-
-
-  PzG::LaczeDoGNUPlota Lacze;
-  Lacze.DodajNazwePliku("../datas/cuboid.dat", PzG::RR_Ciagly, 2);
-
-  Lacze.ZmienTrybRys(PzG::TR_3D);
-
-  Lacze.UstawZakresX(-300,300);
-  Lacze.UstawZakresY(-300,300);
-  Lacze.UstawZakresZ(-300,300);
-  d.zapisz();
-  Lacze.Rysuj();
-  while(1)
-  {
-  d.pilot(Lacze);
-  }
+int main()
+{
+       std::cout << "Project Rotation 2D based on C++ Boiler Plate v"
+                 << PROJECT_VERSION_MAJOR /*duże zmiany, najczęściej brak kompatybilności wstecz */
+                 << "."
+                 << PROJECT_VERSION_MINOR /* istotne zmiany */
+                 << "."
+                 << PROJECT_VERSION_PATCH /* naprawianie bugów */
+                 << "."
+                 << PROJECT_VERSION_TWEAK /* zmiany estetyczne itd. */
+                 << std::endl;
+   Scena Scena;
+       while (Scena.menu()){Scena.rysuj();}
 }

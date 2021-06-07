@@ -1,5 +1,13 @@
 #include "prism6.hh"
 
+/*!
+    konstruktor graniastoslupa                                                                                                                      
+    \param [in] centrum - wspolrzedne srodka graniastoslupa.      
+    \param [in] R - promien graniastoslupa  
+    \param [in] dlugosc_graniastoslupa - dluglosc scianki  
+    \param [in] nazwa_pliku_graniastoslupa6 - nazwa pliku do zapisu wierzcholkow                                                                                                            
+    \return graniastoslup z okreslonymi chechami.                           
+ */
 Prism6::Prism6(Vector3D centrum,double R , double dlugosc_graniastoslupa, std::string nazwa_pliku_graniastoslupa6 )
 {
     double tab[]={0,0,dlugosc_graniastoslupa};

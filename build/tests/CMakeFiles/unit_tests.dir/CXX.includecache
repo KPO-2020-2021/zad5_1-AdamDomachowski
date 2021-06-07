@@ -54,6 +54,10 @@ Vector.hh
 Vector.hh
 ../inc/Vector.hh
 
+../inc/example.h
+../tests/doctest/doctest.h
+../tests/doctest/doctest.h
+
 ../inc/matrix2x2.hh
 Matrix.hh
 ../inc/Matrix.hh
@@ -61,6 +65,10 @@ Matrix.hh
 ../inc/matrix3x3.hh
 Matrix.hh
 ../inc/Matrix.hh
+
+../inc/prism6.hh
+Solid.hh
+../inc/Solid.hh
 
 ../inc/size.hh
 
@@ -148,6 +156,14 @@ sys/time.h
 unistd.h
 -
 
+/home/adam/programowanie/zad5_1-AdamDomachowski/tests/dummy.cpp
+../tests/doctest/doctest.h
+/home/adam/programowanie/zad5_1-AdamDomachowski/tests/doctest/doctest.h
+example.h
+/home/adam/programowanie/zad5_1-AdamDomachowski/tests/example.h
+
+/home/adam/programowanie/zad5_1-AdamDomachowski/tests/main.cpp
+
 /home/adam/programowanie/zad5_1-AdamDomachowski/tests/tests.cpp
 ../tests/doctest/doctest.h
 /home/adam/programowanie/zad5_1-AdamDomachowski/tests/doctest/doctest.h
@@ -167,4 +183,8 @@ matrix3x3.hh
 /home/adam/programowanie/zad5_1-AdamDomachowski/tests/matrix3x3.hh
 Cuboid.hh
 /home/adam/programowanie/zad5_1-AdamDomachowski/tests/Cuboid.hh
+prism6.hh
+/home/adam/programowanie/zad5_1-AdamDomachowski/tests/prism6.hh
+Solid.hh
+/home/adam/programowanie/zad5_1-AdamDomachowski/tests/Solid.hh
 

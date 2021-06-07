@@ -644,6 +644,33 @@ src/Solid.cpp.s:
 	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Solid.cpp.s
 .PHONY : src/Solid.cpp.s
 
+src/bottom.o: src/bottom.cpp.o
+
+.PHONY : src/bottom.o
+
+# target to build an object file
+src/bottom.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/bottom.cpp.o
+.PHONY : src/bottom.cpp.o
+
+src/bottom.i: src/bottom.cpp.i
+
+.PHONY : src/bottom.i
+
+# target to preprocess a source file
+src/bottom.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/bottom.cpp.i
+.PHONY : src/bottom.cpp.i
+
+src/bottom.s: src/bottom.cpp.s
+
+.PHONY : src/bottom.s
+
+# target to generate assembly for a file
+src/bottom.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/bottom.cpp.s
+.PHONY : src/bottom.cpp.s
+
 src/cuboid.o: src/cuboid.cpp.o
 
 .PHONY : src/cuboid.o
@@ -779,6 +806,33 @@ src/prism6.cpp.s:
 	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/prism6.cpp.s
 .PHONY : src/prism6.cpp.s
 
+src/scena.o: src/scena.cpp.o
+
+.PHONY : src/scena.o
+
+# target to build an object file
+src/scena.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/scena.cpp.o
+.PHONY : src/scena.cpp.o
+
+src/scena.i: src/scena.cpp.i
+
+.PHONY : src/scena.i
+
+# target to preprocess a source file
+src/scena.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/scena.cpp.i
+.PHONY : src/scena.cpp.i
+
+src/scena.s: src/scena.cpp.s
+
+.PHONY : src/scena.s
+
+# target to generate assembly for a file
+src/scena.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/scena.cpp.s
+.PHONY : src/scena.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -831,6 +885,9 @@ help:
 	@echo "... src/Solid.o"
 	@echo "... src/Solid.i"
 	@echo "... src/Solid.s"
+	@echo "... src/bottom.o"
+	@echo "... src/bottom.i"
+	@echo "... src/bottom.s"
 	@echo "... src/cuboid.o"
 	@echo "... src/cuboid.i"
 	@echo "... src/cuboid.s"
@@ -846,6 +903,9 @@ help:
 	@echo "... src/prism6.o"
 	@echo "... src/prism6.i"
 	@echo "... src/prism6.s"
+	@echo "... src/scena.o"
+	@echo "... src/scena.i"
+	@echo "... src/scena.s"
 .PHONY : help
 
 

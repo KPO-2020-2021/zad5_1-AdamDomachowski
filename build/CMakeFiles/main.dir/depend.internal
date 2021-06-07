@@ -8,9 +8,12 @@ CMakeFiles/main.dir/app/main.cpp.o
  ../inc/Solid.hh
  ../inc/Vector.hh
  ../inc/Vector3D.hh
+ ../inc/bottom.hh
  ../inc/example.h
+ ../inc/lacze_do_gnuplota.hh
  ../inc/matrix3x3.hh
  ../inc/prism6.hh
+ ../inc/scena.hh
  ../inc/size.hh
  /home/adam/programowanie/zad5_1-AdamDomachowski/app/main.cpp
  /home/adam/programowanie/zad5_1-AdamDomachowski/inc/lacze_do_gnuplota.hh

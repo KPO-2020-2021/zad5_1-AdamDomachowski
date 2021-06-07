@@ -12,13 +12,23 @@ void Solid::wstaw_srodek(Vector3D srodek_bryly)
     this->srodek_bryly = srodek_bryly; //aby zapobiec przykrywaniu się zmiennych uzywam this*/
 }
 
-
 /*! \brief zczytuje wierzcholki srodka bryly*/
 Vector3D Solid::zczytaj_srodek() const
 {
     return srodek_bryly;
 }
 
+/*! \brief zwraca konkretny wierzchołek*/
+Vector3D Solid::czytaj_wierzcholki(int ver) const
+{
+    return wierzcholki[ver];
+}
+
+/*! \brief umozwliwia podania nazwy pliku do ktorego zapisywane beda wierzcholki*/
+void Solid::ustaw_nazwe_pliku(std::string nazwa_pliku_bryly)
+{
+    this->nazwa_pliku_bryly = nazwa_pliku_bryly;
+}
 
 /*! \brief zczytuje nazwe pliku do ktorego zapisywane beda wierzcholki*/
 std::string Solid::jaka_nazwa() const
@@ -26,6 +36,17 @@ std::string Solid::jaka_nazwa() const
     return nazwa_pliku_bryly;
 }
 
+/*! \brief operator indeksujacy*/
+Vector3D &Solid::operator[](int index)
+{
+    return wierzcholki[index];
+}
+
+/*! \brief operator indeksujacy*/
+Vector3D Solid::operator[](int index) const
+{
+    return wierzcholki[index];
+}
 
 /*! \brief przesuwa bryle o zadany wektor*/
 void Solid::przesun_o_wektor(Vector3D wektor_przesuniecia)
@@ -37,7 +58,6 @@ void Solid::przesun_o_wektor(Vector3D wektor_przesuniecia)
     srodek_bryly =  srodek_bryly + wektor_przesuniecia;
 }
 
-
 /*! \brief obraca bryle o zadany kat*/
 void Solid::obrot(Matrix3x3 macierz_obrotu)
 {
@@ -45,8 +65,8 @@ void Solid::obrot(Matrix3x3 macierz_obrotu)
     {
         wierzcholki[i] =  macierz_obrotu * wierzcholki[i];
     }
+    srodek_bryly = macierz_obrotu*srodek_bryly;
 } 
-
 
 /*! \brief zapisuje wspolrzedne bryly do pliku*/
 void Solid::zapisz_do_pliku()
@@ -73,3 +93,4 @@ void Solid::zapisz_do_pliku()
       plik << srodek_bryly-wysokosc << std::endl << std::endl;
     plik.close();
 }
+

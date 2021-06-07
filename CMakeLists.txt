@@ -45,11 +45,14 @@ set(SOURCES          # All .cpp files in src/
     src/Solid.cpp
     src/prism6.cpp
     src/Drone.cpp
+    src/scena.cpp
+    src/bottom.cpp
 )
 set(TESTFILES        # All .cpp files in tests/
     tests/dummy.cpp
     tests/main.cpp
     tests/tests.cpp
+    tests/test_cuboid.cpp
 )
 set(LIBRARY_NAME program)  # Default name for the library built from src/*.cpp (change if you wish)
 

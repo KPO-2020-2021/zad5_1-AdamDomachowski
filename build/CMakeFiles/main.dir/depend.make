@@ -7,9 +7,12 @@ CMakeFiles/main.dir/app/main.cpp.o: ../inc/Matrix.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Solid.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Vector.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Vector3D.hh
+CMakeFiles/main.dir/app/main.cpp.o: ../inc/bottom.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/example.h
+CMakeFiles/main.dir/app/main.cpp.o: ../inc/lacze_do_gnuplota.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/matrix3x3.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/prism6.hh
+CMakeFiles/main.dir/app/main.cpp.o: ../inc/scena.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/size.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../app/main.cpp
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/lacze_do_gnuplota.hh

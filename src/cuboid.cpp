@@ -1,6 +1,14 @@
 #include "Cuboid.hh"
 
-/*! \brief konstruktor parametryczny*/
+/*!
+    konstruktor prostopadloscianu                                                                                                                      
+    \param [in] srodek - wspolrzedne srodka prostopadloscianu.      
+    \param [in] a - dlugosc  
+    \param [in] b - szerokosc  
+    \param [in] c - wysokosc  
+    \param [in] nazwa_pliku_prostopadloscianu - nazwa pliku do zapisu wierzcholkow                                                                                                            
+    \return prostopadloscian z okreslonymi chechami.                           
+ */
 Cuboid::Cuboid(Vector3D srodek, double a, double b, double c, std::string nazwa_pliku_prostopadloscianu)
 {
     double tab[]={a,b,c};
@@ -54,12 +62,3 @@ Cuboid::Cuboid(Vector3D srodek, double a, double b, double c, std::string nazwa_
     
 }
  
-/* 
-Cuboid::Cuboid(Cuboid& prostopadloscian )
-{
-    wymiary = prostopadloscian.wymiary;
-    wierzcholki = prostopadloscian.wierzcholki;
-    srodek_bryly = prostopadloscian.srodek_bryly;
-    nazwa_pliku_bryly = prostopadloscian.nazwa_pliku_bryly; 
-}
-*/

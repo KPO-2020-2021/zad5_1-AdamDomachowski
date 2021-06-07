@@ -40,6 +40,16 @@
   "file": "/home/adam/programowanie/zad5_1-AdamDomachowski/src/Drone.cpp"
 },
 {
+  "directory": "/home/adam/programowanie/zad5_1-AdamDomachowski/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/programowanie/zad5_1-AdamDomachowski/build -I/home/adam/programowanie/zad5_1-AdamDomachowski/inc -I/home/adam/programowanie/zad5_1-AdamDomachowski/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/scena.cpp.o -c /home/adam/programowanie/zad5_1-AdamDomachowski/src/scena.cpp",
+  "file": "/home/adam/programowanie/zad5_1-AdamDomachowski/src/scena.cpp"
+},
+{
+  "directory": "/home/adam/programowanie/zad5_1-AdamDomachowski/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/programowanie/zad5_1-AdamDomachowski/build -I/home/adam/programowanie/zad5_1-AdamDomachowski/inc -I/home/adam/programowanie/zad5_1-AdamDomachowski/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/bottom.cpp.o -c /home/adam/programowanie/zad5_1-AdamDomachowski/src/bottom.cpp",
+  "file": "/home/adam/programowanie/zad5_1-AdamDomachowski/src/bottom.cpp"
+},
+{
   "directory": "/home/adam/programowanie/zad5_1-AdamDomachowski/build/tests",
   "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/adam/programowanie/zad5_1-AdamDomachowski/build -I/home/adam/programowanie/zad5_1-AdamDomachowski/inc -I/home/adam/programowanie/zad5_1-AdamDomachowski/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/main.cpp.o -c /home/adam/programowanie/zad5_1-AdamDomachowski/tests/main.cpp",
   "file": "/home/adam/programowanie/zad5_1-AdamDomachowski/tests/main.cpp"
