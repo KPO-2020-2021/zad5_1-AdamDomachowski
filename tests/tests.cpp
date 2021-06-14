@@ -14,7 +14,6 @@
 
 //testy do Vector3D
 
-
 TEST_CASE("odczytywanie wartosci wektora."){
     double tab[]={9,67,5};
     double a,b,c;
@@ -100,9 +99,7 @@ TEST_CASE("dzielenie wektora3D przez 0."){
     WARN_THROWS (Vec1 = Vec1 / 0);
 }
 
-
 // testy do Vector2D
-
 
 TEST_CASE("vector - konstruktor bezparametryczny Vector()")
 {
@@ -156,8 +153,6 @@ TEST_CASE("vector - operator -")
   }
 }
 
-
-
 TEST_CASE("vector - operator [out of size]") 
 
 {
@@ -186,7 +181,6 @@ TEST_CASE("wczytywanie i odczytywania wartosci"){
     CHECK((temp(0,0)==1 && temp(0,1)==2 && temp(1,0) ==3 && temp(1,1)==4));
 }
 
-
 TEST_CASE("mnozenie macierzy2x2 i wektora."){
     double a[]={5,10}, b[2][2]={1,2,3,4};
     Vector<2> A(a);
@@ -201,7 +195,6 @@ TEST_CASE("mnozenie macierzy przez macierz."){
     Result = A * B;
     CHECK((Result(0,0) == 15 && Result(0,1) == 9 && Result(1,0) == 39 && Result(1,1) == 23));
 }
-
 
 TEST_CASE("dodawanie dwoch macierzy"){
     double a[2][2]={4,6,8,12},b[2][2]={6,4,2,-2};
@@ -228,9 +221,6 @@ TEST_CASE("reset macierzy."){
     temp.reset_matrix();
     CHECK((temp==jednostkowa));
 }
-
-
-
 
 //testy dla Cuboid
 

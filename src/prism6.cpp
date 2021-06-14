@@ -1,6 +1,11 @@
 #include "prism6.hh"
 
 /*!
+    \file
+    \brief metody klasy prism6
+*/
+
+/*!
     konstruktor graniastoslupa                                                                                                                      
     \param [in] centrum - wspolrzedne srodka graniastoslupa.      
     \param [in] R - promien graniastoslupa  

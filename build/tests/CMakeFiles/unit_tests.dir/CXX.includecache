@@ -54,10 +54,6 @@ Vector.hh
 Vector.hh
 ../inc/Vector.hh
 
-../inc/example.h
-../tests/doctest/doctest.h
-../tests/doctest/doctest.h
-
 ../inc/matrix2x2.hh
 Matrix.hh
 ../inc/Matrix.hh
@@ -155,14 +151,6 @@ sys/time.h
 -
 unistd.h
 -
-
-/home/adam/programowanie/zad5_1-AdamDomachowski/tests/dummy.cpp
-../tests/doctest/doctest.h
-/home/adam/programowanie/zad5_1-AdamDomachowski/tests/doctest/doctest.h
-example.h
-/home/adam/programowanie/zad5_1-AdamDomachowski/tests/example.h
-
-/home/adam/programowanie/zad5_1-AdamDomachowski/tests/main.cpp
 
 /home/adam/programowanie/zad5_1-AdamDomachowski/tests/tests.cpp
 ../tests/doctest/doctest.h

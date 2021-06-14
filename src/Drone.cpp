@@ -1,13 +1,17 @@
 #include "Drone.hh"
 
-
 /*!
-    konstruktor drona                                                                                                                      
-    \param [in] nr_drona - index wektora.      
+    \file
+    \brief metody klasy drone
+*/
+
+    /*!
+    \brief konstruktor drona                                                                                                                      
+    \param [in] nr_drona - numer drona.      
     \param [in] Lacze - gnuplot  
     \param [in] wspolrzende - poczatkowe polozenie drona.                                                                                                            
     \return nieobrocony dron we wskazanym punkcie.                              
- */
+    */
     Drone::Drone(int nr_drona,PzG::LaczeDoGNUPlota &Lacze, Vector3D wspolrzende):Lacze(Lacze)
     {
         this->nr_drona = nr_drona;
@@ -43,7 +47,7 @@
     }
 
 /*!
-    funkcja obrotu drona                                                                                                                      
+    \brief funkcja obrotu drona                                                                                                                      
     \param [in] kat - kat do obrotu.      
 */
     void Drone::obrot(double kat)
@@ -57,7 +61,7 @@
     }
 
 /*!
-    funkcja odpowiedzialna za symulacje obrotu wiernikow oraz ich przemieszcanie                                                                                                                  
+    \brief funkcja odpowiedzialna za symulacje obrotu wiernikow oraz ich przemieszcanie                                                                                                                  
     \param [in] kat - kat do obrotu.     
 */
     void Drone::obrot_wiernikow()
@@ -81,7 +85,7 @@
     }
 
 /*!
-    funkcja odpowiedzialna za przesuwanie drona (lot) po plaszczyznie                                                                                                          
+    \brief funkcja odpowiedzialna za przesuwanie drona (lot) po plaszczyznie                                                                                                          
     \param [in] droga - droga ktora przebedzie dron.     
 */
     void Drone::przesun(double droga)
@@ -97,7 +101,7 @@
     }
 
 /*!
-    funkcja odpowiadająca za zapis informacji o wspolrzednych do pliku                                                                                                            
+    \brief funkcja odpowiadająca za zapis informacji o wspolrzednych do pliku                                                                                                            
 */
     void Drone::zapisz()
     {
@@ -109,7 +113,7 @@
     }
 
 /*!
-    funkcja wizualizująca oraz wykonująca lot drona w kierunku prostopadlym do podloza                                                                                                        
+    \brief funkcja wizualizująca oraz wykonująca lot drona w kierunku prostopadlym do podloza                                                                                                        
     \param [in] droga - droga ktora przebedzie dron.     
 */
     void Drone::lot_do_gory(double droga)
@@ -124,7 +128,7 @@
     }
 
 /*!
-    funkcja odpowiadająca za pilotaz dronem.
+    \brief funkcja odpowiadająca za pilotaz dronem.
 */
     void Drone::pilot()
     {
@@ -232,7 +236,7 @@
     }
 
 /*!
-    funkcja wizualizująca trajektorie lotu                                                                                                       
+    \brief funkcja wizualizująca trajektorie lotu                                                                                                       
     \param [in] droga - droga ktora przebedzie dron.     
 */
     void Drone::narysuj_trase(double droga)

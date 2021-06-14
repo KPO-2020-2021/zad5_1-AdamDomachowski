@@ -1,6 +1,10 @@
 #include "scena.hh"
 
-/*! \brief przygotowuje scene, rysuje podloze, tworzy drony, ustawia gnuplota */
+/*!
+    \file
+        \brief przygotowuje scene, rysuje podloze, tworzy drony, ustawia gnuplota
+*/
+
 Scena::Scena()
 {
 Lacze.ZmienTrybRys(PzG::TR_3D);

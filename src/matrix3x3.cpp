@@ -1,4 +1,8 @@
 #include "matrix3x3.hh"
+/*!
+    \file
+    \brief metody klasy matrix3x3
+*/
 
 /*! \brief Funkcja przygotowujaca macierz obrout dla zadanego kata wzgledem osi X. 
     \param[in] kat - kat obrotu

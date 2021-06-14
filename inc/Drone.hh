@@ -4,6 +4,11 @@
 #include "prism6.hh"
 #include "../inc/lacze_do_gnuplota.hh"
 
+/*!
+    \file
+    \brief klasa drona
+*/
+
 class Drone 
 {
     PzG::LaczeDoGNUPlota &Lacze;

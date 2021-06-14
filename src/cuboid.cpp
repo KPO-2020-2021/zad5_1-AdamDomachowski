@@ -1,6 +1,12 @@
 #include "Cuboid.hh"
 
 /*!
+    \file
+    \brief metody klasy Cuboid
+*/
+
+
+/*!
     konstruktor prostopadloscianu                                                                                                                      
     \param [in] srodek - wspolrzedne srodka prostopadloscianu.      
     \param [in] a - dlugosc  

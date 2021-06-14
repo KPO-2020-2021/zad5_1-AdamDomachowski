@@ -1,0 +1,18 @@
+var searchData=
+[
+  ['oblicz_5fwyzn_57',['oblicz_wyzn',['../class_matrix.html#af9fb043908fc651c929476a786427e32',1,'Matrix']]],
+  ['obrot_58',['obrot',['../class_drone.html#a4ad8e08290762ae5be03fe54452074c3',1,'Drone::obrot()'],['../class_solid.html#a86f5c82470a99e67caf50e33aa0c0cd9',1,'Solid::obrot()']]],
+  ['obrot_5fwiernikow_59',['obrot_wiernikow',['../class_drone.html#a885cb1824143e601b6313a3959296388',1,'Drone']]],
+  ['obrot_5fx_60',['obrot_X',['../matrix3x3_8hh.html#a1b1c578053436e25b1247606cb35d497',1,'obrot_X(double const kat):&#160;matrix3x3.cpp'],['../matrix3x3_8cpp.html#a1b1c578053436e25b1247606cb35d497',1,'obrot_X(double const kat):&#160;matrix3x3.cpp']]],
+  ['obrot_5fy_61',['obrot_Y',['../matrix3x3_8hh.html#aa4993b78f26871256a063dc3922305fb',1,'obrot_Y(double const kat):&#160;matrix3x3.cpp'],['../matrix3x3_8cpp.html#aa4993b78f26871256a063dc3922305fb',1,'obrot_Y(double const kat):&#160;matrix3x3.cpp']]],
+  ['obrot_5fz_62',['obrot_Z',['../matrix3x3_8hh.html#a50ead2c60333991d53845ac2422aa6d5',1,'obrot_Z(double const kat):&#160;matrix3x3.cpp'],['../matrix3x3_8cpp.html#a50ead2c60333991d53845ac2422aa6d5',1,'obrot_Z(double const kat):&#160;matrix3x3.cpp']]],
+  ['operator_28_29_63',['operator()',['../class_matrix.html#a4002e995b530bfcc464523dd39926005',1,'Matrix::operator()(unsigned int row, unsigned int column)'],['../class_matrix.html#a76d4f095f8ee04310044df89a562901f',1,'Matrix::operator()(unsigned int row, unsigned int column) const']]],
+  ['operator_2a_64',['operator*',['../class_matrix.html#a87732a487c1f0d5f9289efa462709015',1,'Matrix::operator*(Vector&lt; SIZE &gt; const &amp;tmp)'],['../class_matrix.html#a3921e72defa6b13e6d264fd6adcf5c81',1,'Matrix::operator*(Matrix&lt; SIZE &gt; const &amp;tmp)'],['../class_vector.html#abea8cdbbb35276411619f66a562484e2',1,'Vector::operator*()']]],
+  ['operator_2b_65',['operator+',['../class_matrix.html#a924b76af78e5217f5fbc8b10f7879f91',1,'Matrix::operator+()'],['../class_vector.html#ad074879898d8383756e81390a7ac399a',1,'Vector::operator+()']]],
+  ['operator_2d_66',['operator-',['../class_vector.html#a10dba7e63da145c3de2e22ac737bd288',1,'Vector']]],
+  ['operator_2f_67',['operator/',['../class_vector.html#a7dd8a36f13542601a1362c84f5aa4bbb',1,'Vector']]],
+  ['operator_3c_3c_68',['operator&lt;&lt;',['../_matrix_8hh.html#a2c77a791bbfda3356a0c4f335f8b6e6e',1,'operator&lt;&lt;(std::ostream &amp;out, Matrix&lt; SIZE &gt; const &amp;mat):&#160;Matrix.hh'],['../_vector_8hh.html#acd6e8bcccdfd22dc4a60cdc3c0aec49c',1,'operator&lt;&lt;(std::ostream &amp;out, Vector&lt; SIZE &gt; const &amp;tmp):&#160;Vector.hh']]],
+  ['operator_3d_3d_69',['operator==',['../class_matrix.html#a0e8d8df0246a429122afb0bc576b61b5',1,'Matrix']]],
+  ['operator_3e_3e_70',['operator&gt;&gt;',['../_matrix_8hh.html#ae272d3a3cfa5b816168f98d6de6ce5b4',1,'operator&gt;&gt;(std::istream &amp;in, Matrix&lt; SIZE &gt; &amp;mat):&#160;Matrix.hh'],['../_vector_8hh.html#a6c32d5cbd699450ead53a62ebb9618a6',1,'operator&gt;&gt;(std::istream &amp;in, Vector&lt; SIZE &gt; &amp;tmp):&#160;Vector.hh']]],
+  ['operator_5b_5d_71',['operator[]',['../class_bottom.html#a56ac8184cc548271d52d79c6ba468cf3',1,'Bottom::operator[](int index)'],['../class_bottom.html#a987ed577eb0b17674538e9cdae845d5f',1,'Bottom::operator[](int index) const'],['../class_solid.html#a43a797013fb1109e1507f85642d8dedf',1,'Solid::operator[](int index)'],['../class_solid.html#ab4bead5332c87604502090768805dde2',1,'Solid::operator[](int index) const'],['../class_vector.html#aa29bc8b7d6a578cbb0a4e324912ee8fd',1,'Vector::operator[](int index) const'],['../class_vector.html#a7841ed729f556fc8e868a80d8f503e18',1,'Vector::operator[](int index)']]]
+];
