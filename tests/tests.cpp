@@ -222,42 +222,7 @@ TEST_CASE("reset macierzy."){
     CHECK((temp==jednostkowa));
 }
 
-//testy dla Cuboid
 
-TEST_CASE("test parametrycznego konstruktora klasy."){
-Cuboid cub;
-
-CHECK(cub.jaka_nazwa() == "../datas/cuboid.dat");
-double zero[3] = {0,0,0};
-Vector3D srodek = Vector3D(zero);
-CHECK(cub.zczytaj_srodek() == srodek);
-
-double w0[3] = {-15,15,10};
-double w1[3] = {-15,15,-10};
-double w2[3] = {15,15,10};
-double w3[3] = {15,15,-10};
-double w4[3] = {15,-15,10};
-double w5[3] = {15,-15,-10};
-double w6[3] = {-15,-15,10};
-double w7[3] = {-15,-15,-10};
-
-Vector3D a = Vector3D(w0);
-CHECK(cub.czytaj_wierzcholki(0) == a);
-Vector3D b = Vector3D(w1);
-CHECK(cub.czytaj_wierzcholki(1) == b);
-Vector3D c = Vector3D(w2);
-CHECK(cub.czytaj_wierzcholki(2) == c);
-Vector3D d = Vector3D(w3);
-CHECK(cub.czytaj_wierzcholki(3) == d);
-Vector3D e = Vector3D(w4);
-CHECK(cub.czytaj_wierzcholki(4) == e);
-Vector3D f = Vector3D(w5);
-CHECK(cub.czytaj_wierzcholki(5) == f);
-Vector3D g = Vector3D(w6);
-CHECK(cub.czytaj_wierzcholki(6) == g);
-Vector3D h = Vector3D(w7);
-CHECK(cub.czytaj_wierzcholki(7) == h);
-}
 
 //testy dla prism6
 

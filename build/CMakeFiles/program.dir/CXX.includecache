@@ -104,26 +104,6 @@ bottom.hh
 
 ../inc/size.hh
 
-/home/adam/programowanie/zad5_1-AdamDomachowski/src/Drone.cpp
-Drone.hh
-/home/adam/programowanie/zad5_1-AdamDomachowski/src/Drone.hh
-
-/home/adam/programowanie/zad5_1-AdamDomachowski/src/bottom.cpp
-bottom.hh
-/home/adam/programowanie/zad5_1-AdamDomachowski/src/bottom.hh
-
-/home/adam/programowanie/zad5_1-AdamDomachowski/src/cuboid.cpp
-Cuboid.hh
-/home/adam/programowanie/zad5_1-AdamDomachowski/src/Cuboid.hh
-
-/home/adam/programowanie/zad5_1-AdamDomachowski/src/matrix3x3.cpp
-matrix3x3.hh
-/home/adam/programowanie/zad5_1-AdamDomachowski/src/matrix3x3.hh
-
-/home/adam/programowanie/zad5_1-AdamDomachowski/src/prism6.cpp
-prism6.hh
-/home/adam/programowanie/zad5_1-AdamDomachowski/src/prism6.hh
-
 /home/adam/programowanie/zad5_1-AdamDomachowski/src/scena.cpp
 scena.hh
 /home/adam/programowanie/zad5_1-AdamDomachowski/src/scena.hh

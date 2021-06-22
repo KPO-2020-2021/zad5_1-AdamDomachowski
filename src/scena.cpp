@@ -22,7 +22,7 @@ podloze->zapisz();
 
 for(int i=0;i<ilosc_dronow_na_scenie; i++)
 {
-double pozycja[3]={(double)(rand()%440-220),(double)(rand()%440-220),25};
+double pozycja[3]={(double)(rand()%440-220),(double)(rand()%440-220),15};
 tab[i]=new Drone(i,Lacze,Vector3D(pozycja));
 tab[i]->zapisz();
 }
